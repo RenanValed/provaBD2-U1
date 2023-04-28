@@ -14,11 +14,6 @@ CREATE TABLE departamento (
     FOREIGN KEY (cod_gerente) REFERENCES funcionario(codigo)
 );
 
-ALTER TABLE funcionario
-ADD CONSTRAINT fk_departamento_funcionario
-FOREIGN KEY (cod_depto)
-REFERENCES departamento(codigo);
-
 
 CREATE TABLE projeto (
     codigo INT PRIMARY KEY,
